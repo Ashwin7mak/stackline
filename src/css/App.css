@@ -14,12 +14,10 @@
 
 .grid-container {
   display: grid;
-  height: 100%;
+  min-height: 100%;
   grid-template-columns: minmax(250px, 0.4fr) 1.3fr;
-  grid-template-rows: minmax(80px, 0.15fr) minmax(600px, 1.4fr) minmax(
-      1000px,
-      10000px
-    );
+  grid-auto-rows: minmax(80px, 0.15fr) minmax(600px, 1.4fr)
+    minmax(700px, max-content);
   grid-template-areas: "header-container header-container" "product-container chart-container" "product-container table-container";
 }
 
@@ -31,9 +29,6 @@
   border-right: var(--thin-vertical-border);
   border-top: var(--horizontal-border);
   border-bottom: var(--horizontal-border);
-}
-#product {
-  /* padding: 2%; */
 }
 #product img {
   height: 100%;

@@ -2,6 +2,7 @@
   "name": "stackline",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kyleyasumiishi.github.io/stackline",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
     "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
@@ -17,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "devDependencies": {
     "enzyme": "^3.3.0",

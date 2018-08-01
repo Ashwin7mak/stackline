@@ -20,11 +20,11 @@ class TableContainer extends Component {
       this.props.data.sales.map(row => {
         return (
           <tr>
-            <td>{row.weekEnding}</td>
-            <td>{row.retailSales}</td>
-            <td>{row.wholesaleSales}</td>
-            <td>{row.unitsSold}</td>
-            <td>{row.retailerMargin}</td>
+            <td>{row.weekEnding.toLocaleString()}</td>
+            <td>{"$" + row.retailSales.toLocaleString()}</td>
+            <td>{"$" + row.wholesaleSales.toLocaleString()}</td>
+            <td>{row.unitsSold.toLocaleString()}</td>
+            <td>{"$" + row.retailerMargin.toLocaleString()}</td>
           </tr>
         );
       })
