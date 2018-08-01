@@ -27,8 +27,8 @@ Create TableContainer
   - Render TableContainer in App.js - DONE
 Test TableContainer - DONE
 Create ChartContainer
-  - Use recharts for graph
-  - Render ChartContainer in App.js
+  - Use recharts for graph - DONE
+  - Render ChartContainer in App.js - DONE
 Create Header component
   - Add Stackline logo
 Add sort functionality

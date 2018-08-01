@@ -3,6 +3,7 @@ import "./css/App.css";
 
 import ProductContainer from "./js/containers/ProductContainer";
 import TableContainer from "./js/containers/TableContainer";
+import ChartContainer from "./js/containers/ChartContainer";
 
 class App extends Component {
   render() {
@@ -11,7 +12,9 @@ class App extends Component {
         <div className="product-container">
           <ProductContainer />
         </div>
-        <div className="chart-container">{/* <ChartContainer /> */}</div>
+        <div className="chart-container">
+          <ChartContainer />
+        </div>
         <div className="table-container">
           <TableContainer />
         </div>
