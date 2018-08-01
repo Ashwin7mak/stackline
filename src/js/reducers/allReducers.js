@@ -1,5 +1,7 @@
 import { combineReducers } from "redux";
-import data from "../../data/Webdev_data.json";
+import json from "../../data/Webdev_data.json";
+
+const data = json[0];
 
 const dataReducer = (state = data, action) => {
   return state;
