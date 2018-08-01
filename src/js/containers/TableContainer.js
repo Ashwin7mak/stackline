@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import Table from "../components/Table";
 import { sortBy } from "../actions/actions";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 class TableContainer extends Component {
   constructor(props) {
@@ -32,7 +34,9 @@ class TableContainer extends Component {
       </tr>
     );
 
-    return <Table rows={rows} sortBy={this.sortBy} />;
+    const arrowIcon = <FontAwesomeIcon icon={faCaretDown} />;
+
+    return <Table rows={rows} sortBy={this.sortBy} icon={arrowIcon} />;
   }
 }
 

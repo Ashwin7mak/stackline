@@ -7,19 +7,30 @@ const Table = props => {
         <thead>
           <tr>
             <th scope="col" onClick={() => props.sortBy("weekEnding")}>
-              WEEK ENDING
+              <div>
+                WEEK ENDING
+                <span className="arrowIcon"> {props.icon}</span>
+              </div>
             </th>
             <th scope="col" onClick={() => props.sortBy("retailSales")}>
-              RETAIL SALES
+              <div>
+                RETAIL SALES <span className="arrowIcon">{props.icon}</span>
+              </div>
             </th>
             <th scope="col" onClick={() => props.sortBy("wholesaleSales")}>
-              WHOLESALE SALES
+              <div>
+                WHOLESALE SALES <span className="arrowIcon">{props.icon}</span>
+              </div>
             </th>
             <th scope="col" onClick={() => props.sortBy("unitsSold")}>
-              UNITS SOLD
+              <div>
+                UNITS SOLD <span className="arrowIcon">{props.icon}</span>
+              </div>
             </th>
             <th scope="col" onClick={() => props.sortBy("retailerMargin")}>
-              RETAILER MARGIN
+              <div>
+                RETAILER MARGIN <span className="arrowIcon">{props.icon}</span>
+              </div>
             </th>
           </tr>
         </thead>
