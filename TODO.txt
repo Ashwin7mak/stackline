@@ -42,7 +42,7 @@ Styling
   - Add drop down arrows to Table headers - DONE
   - Add Graph title 
   - Add lines between rows in table - DONE
-  - Add box shadow to containers
+  - Add box shadow to containers - DONE
 
 Deploy to gh-pages - DONE
 
