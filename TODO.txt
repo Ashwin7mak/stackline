@@ -10,7 +10,7 @@ Create Product component
   - Add <hr> element - DONE
   - Add Overview/Home Icon - DONE
   - Add Sales/Graph Icon - DONE
-Test Product component
+Test Product component 
 Create ProductContainer
   - Render 1 Product component
   - Pass in src, title, subtitle, tags, and icons to Product component
