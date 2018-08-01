@@ -1,10 +1,20 @@
 import React from "react";
 import { shallow, configure, mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
+import { SORT } from "../constants";
+import { sortBy } from "../js/actions/actions";
 
 configure({ adapter: new Adapter() });
 
-// Each action should create a TYPE of action
-// See https://github.com/kyleyasumiishi/react-calculator/blob/master/src/__tests__/actions.test.js
-
-describe("actions", () => {});
+describe("actions", () => {
+  describe("sortBy", () => {
+    it("should create a SORT action", () => {
+      const key = "retailSales";
+      const expectedAction = {
+        type: SORT,
+        key
+      };
+      expect(sortBy(key)).toEqual(expectedAction);
+    });
+  });
+});

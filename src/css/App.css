@@ -17,7 +17,7 @@
   grid-template-columns: minmax(250px, 0.4fr) 1.3fr;
   grid-template-rows: minmax(80px, 0.15fr) minmax(600px, 1.4fr) minmax(
       1000px,
-      1.4fr
+      10000px
     );
   grid-template-areas: "header-container header-container" "product-container chart-container" "product-container table-container";
 }
@@ -78,6 +78,9 @@
   background-color: var(--container-background-color);
   text-align: left;
   color: black;
+}
+#header img {
+  height: 75px;
 }
 /* Chart Area */
 .chart-container {

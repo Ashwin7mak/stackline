@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Table from "../components/Table";
+import { sortBy } from "../actions/actions";
 
 class TableContainer extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class TableContainer extends Component {
   }
 
   sortBy(key) {
-    console.log(key);
+    this.props.sortBy(key);
   }
 
   render() {
@@ -41,7 +42,15 @@ function mapStateToProps(state) {
   };
 }
 
+function mapDispatchToProps(dispatch) {
+  return {
+    sortBy: function(key) {
+      dispatch(sortBy(key));
+    }
+  };
+}
+
 export default connect(
   mapStateToProps,
-  null
+  mapDispatchToProps
 )(TableContainer);
