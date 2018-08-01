@@ -31,6 +31,47 @@
   border-top: var(--horizontal-border);
   border-bottom: var(--horizontal-border);
 }
+#product {
+  margin: 2%;
+}
+#product img {
+  height: 100%;
+  width: 100%;
+}
+#title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1%;
+}
+#subtitle {
+  text-align: center;
+  font-weight: 300;
+}
+#spans {
+  text-align: center;
+}
+.tags {
+  border: 1px solid black;
+  padding: 2%;
+  margin: 2%;
+  display: inline-block;
+}
+#icons {
+  text-align: left;
+}
+#overview-icon,
+#sales-icon {
+  margin: 10%;
+}
+#overview-icon-text,
+#sales-icon-text {
+  margin-left: 10%;
+}
+#product a {
+  text-decoration: none;
+  color: black;
+}
 /* Header Area */
 .header-container {
   grid-area: header-container;
