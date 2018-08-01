@@ -32,19 +32,19 @@ Create ChartContainer
 Create Header component
   - Add Stackline logo - DONE
 Add sort functionality
-  - Create and test SORT action
-  - Add sort logic to reducer to update data held in state
+  - Create and test SORT action - DONE
+  - Add sort logic to reducer to update data held in state - DONE
 Test reducer
 
 Styling
-  - Match color scheme from mockup
-  - Add border radius to tags in Product component
-  - Add drop down arrows to Table headers
+  - Match color scheme from mockup - DONE
+  - Add border radius to tags in Product component - DONE
+  - Add drop down arrows to Table headers - DONE
   - Add Graph title 
-  - Add lines between rows in table
+  - Add lines between rows in table - DONE
   - Add box shadow to containers
 
-Deploy to gh-pages
+Deploy to gh-pages - DONE
 
-Test in Chrome, Safari, Firefox
+Test in Chrome, Safari, Firefox - DONE
 
