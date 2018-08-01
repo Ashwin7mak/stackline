@@ -1,5 +1,4 @@
-import React from "react";
-import { shallow, configure, mount } from "enzyme";
+import { configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import { SORT } from "../constants";
 import { sortBy } from "../js/actions/actions";

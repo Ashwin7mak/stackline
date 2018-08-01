@@ -1,8 +1,6 @@
 import React from "react";
-import { shallow, configure, mount } from "enzyme";
+import { shallow, configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-
-// Import components
 import Product from "../js/components/Product";
 import Table from "../js/components/Table";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow, configure, mount } from "enzyme";
+import { configure, mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import configureStore from "redux-mock-store";
 import { Provider } from "react-redux";
