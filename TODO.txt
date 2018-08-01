@@ -18,14 +18,14 @@ Create ProductContainer
   - Style component - DONE
 Test ProductContainer - DONE
 Create Table component
-  - Add table headings: "Week Ending", "Retail Sales", "Wholesale Sales", "Units Sold", "Retailer Margin"
-  - Table rows should be passed in as props
-Test Table component
-Create TableContainer
-  - Render 1 Table component
-  - Create a variable "rows" by mapping over JSON sales data. Pass this to Table as a prop
-  - Render TableContainer in App.js
-Test TableContainer
+  - Add table headings: "Week Ending", "Retail Sales", "Wholesale Sales", "Units Sold", "Retailer Margin" - DONE
+  - Table rows should be passed in as props - DONE
+Test Table component - DONE
+Create TableContainer 
+  - Render 1 Table component - DONE
+  - Create a variable "rows" by mapping over JSON sales data. Pass this to Table as a prop - DONE
+  - Render TableContainer in App.js - DONE
+Test TableContainer - DONE
 Create ChartContainer
   - Use recharts for graph
   - Render ChartContainer in App.js

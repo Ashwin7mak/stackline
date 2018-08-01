@@ -4,11 +4,9 @@ import Adapter from "enzyme-adapter-react-16";
 
 // Import components
 import Product from "../js/components/Product";
+import Table from "../js/components/Table";
 
 configure({ adapter: new Adapter() });
-
-// Test that components render correct elements
-// Test that components have methods (e.g., onClick, etc.)
 
 describe("components", () => {
   describe("Product", () => {
@@ -50,6 +48,54 @@ describe("components", () => {
       const wrapper = shallow(<Product icons="<Component />" />);
       const icons = wrapper.find("#icons");
       expect(icons.props().children).toEqual("<Component />");
+    });
+  });
+
+  describe("Table", () => {
+    it("should render a <div> element", () => {
+      const wrapper = shallow(<Table />);
+      const div = wrapper.find("div");
+      expect(div.exists()).toBeTruthy();
+    });
+    it("should contain a <table> element", () => {
+      const wrapper = shallow(<Table />);
+      const table = wrapper.find("table");
+      expect(table.exists()).toBeTruthy();
+    });
+    it("the <table> element should contain a <thead> element", () => {
+      const wrapper = shallow(<Table />);
+      const table = wrapper.find("table");
+      const thead = table.find("thead");
+      expect(thead.exists()).toBeTruthy();
+    });
+    it("the <table> element should contain a <tbody> element", () => {
+      const wrapper = shallow(<Table />);
+      const tbody = wrapper.find("tbody");
+      expect(tbody.exists()).toBeTruthy();
+    });
+    it("should contain <td> elements that are passed in from {props.rows}", () => {
+      const wrapper = shallow(
+        <Table
+          rows={
+            <tr>
+              <td>Test</td>
+            </tr>
+          }
+        />
+      );
+      const td = wrapper.find("td");
+      expect(td.exists()).toBeTruthy();
+    });
+    it("has an onClick method", () => {
+      const fakeFunction = jest.fn();
+      const wrapper = shallow(<Table sortBy={fakeFunction} />);
+      const th = wrapper
+        .find("thead")
+        .find("tr")
+        .find("th")
+        .first();
+      th.simulate("click");
+      expect(fakeFunction).toHaveBeenCalledTimes(1);
     });
   });
 });

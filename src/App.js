@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./css/App.css";
 
 import ProductContainer from "./js/containers/ProductContainer";
+import TableContainer from "./js/containers/TableContainer";
 
 class App extends Component {
   render() {
@@ -11,7 +12,9 @@ class App extends Component {
           <ProductContainer />
         </div>
         <div className="chart-container">{/* <ChartContainer /> */}</div>
-        <div className="table-container">{/* <TableContainer /> */}</div>
+        <div className="table-container">
+          <TableContainer />
+        </div>
         <div className="header-container">{/* <Header /> */}</div>
       </div>
     );
