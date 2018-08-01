@@ -1,14 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend
-} from "recharts";
+import { LineChart, Line, XAxis, Tooltip } from "recharts";
 
 class ChartContainer extends Component {
   constructor(props) {
