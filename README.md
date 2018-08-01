@@ -1,5 +1,9 @@
 # Stackline Assessment Challenge
 
+Stackline GitHub repository: https://github.com/kyleyasumiishi/stackline
+
+Live web page (hosted on GitHub Pages): https://kyleyasumiishi.github.io/stackline/
+
 By [Kyle Yasumiishi](mailto:k.yasumiishi@gmail.com)
 
 <https://github.com/kyleyasumiishi>
@@ -32,6 +36,25 @@ Run unit tests
 ```
 npm test
 ```
+
+## Requirements
+
+### Resources to get started (attached via email):
+
+1.  A JSON file to be used as the data source to populate the web page
+2.  A wire mockup of what your final web page should look like
+
+### We are looking for:
+
+1.  A solution that resembles the provided mock up closely and implements AT LEAST ONE of either the graph or chart as seen in the mock up.
+2.  A working solution that takes the provided JSON file as output from a stubbed-out API call
+3.  A solution that implements React and Redux best practices and patterns
+4.  Clean code
+
+### Assets to be returned via email within the provided time frame:
+
+1.  A [public repository](https://github.com/kyleyasumiishi/stackline) to view the final code
+2.  A [public URL](https://kyleyasumiishi.github.io/stackline/) to view the web page
 
 ## Technologies Used
 
