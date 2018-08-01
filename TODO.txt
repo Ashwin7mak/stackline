@@ -30,7 +30,7 @@ Create ChartContainer
   - Use recharts for graph - DONE
   - Render ChartContainer in App.js - DONE
 Create Header component
-  - Add Stackline logo
+  - Add Stackline logo - DONE
 Add sort functionality
   - Create and test SORT action
   - Add sort logic to reducer to update data held in state

@@ -4,6 +4,7 @@ import "./css/App.css";
 import ProductContainer from "./js/containers/ProductContainer";
 import TableContainer from "./js/containers/TableContainer";
 import ChartContainer from "./js/containers/ChartContainer";
+import Header from "./js/components/Header";
 
 class App extends Component {
   render() {
@@ -18,7 +19,9 @@ class App extends Component {
         <div className="table-container">
           <TableContainer />
         </div>
-        <div className="header-container">{/* <Header /> */}</div>
+        <div className="header-container">
+          <Header />
+        </div>
       </div>
     );
   }

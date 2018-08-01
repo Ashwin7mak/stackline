@@ -76,7 +76,7 @@
 .header-container {
   grid-area: header-container;
   background-color: var(--container-background-color);
-  text-align: center;
+  text-align: left;
   color: black;
 }
 /* Chart Area */
