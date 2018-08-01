@@ -2,18 +2,18 @@ Create this list of tasks to complete - DONE
 Add HTML and CSS Grid layout to App.js - DONE
 Add JSON file to Redux store - DONE
 Create Product component
-  - Add image from JSON
-  - Add title beneat image
-  - Add subtitle beneat title
-  - Add <hr> element
-  - Add tags in between <span> elements
-  - Add <hr> element
-  - Add Overview/Home Icon
-  - Add Sales/Graph Icon
+  - Add image from props - DONE
+  - Add title beneat image - DONE
+  - Add subtitle beneath title - DONE
+  - Add <hr> element - DONE
+  - Add tags in between <span> elements - DONE
+  - Add <hr> element - DONE
+  - Add Overview/Home Icon - DONE
+  - Add Sales/Graph Icon - DONE
 Test Product component
 Create ProductContainer
   - Render 1 Product component
-  - Pass in src, title, subtitle, tags to Product component
+  - Pass in src, title, subtitle, tags, and icons to Product component
   - Render ProductContainer in App.js
 Test ProductContainer
 Create Table component
