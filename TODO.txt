@@ -41,6 +41,9 @@ Styling
   - Add drop down arrows to Table headers
   - Add Graph title 
   - Add lines between rows in table
+  - Add box shadow to containers
 
 Deploy to gh-pages
+
+Test in Chrome, Safari, Firefox
 

@@ -1,28 +1,61 @@
-.App {
+:root {
+  --light-gray: #f7f8fa;
+  --border-vertical-width: 10px;
+  --border-horiz-width: 55px;
+  --stackline-dark-purple: #65619d;
+  --stackline-light-purple: #d7dff3;
+  --stackline-dark-blue: #3c4858;
+  --stackline-bright-blue: #40a8ef;
+  --vertical-border: var(--border-vertical-width) solid var(--light-gray);
+  --horizontal-border: var(--border-horiz-width) solid var(--light-gray);
+  --container-background-color: white;
+}
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: minmax(250px, 0.4fr) 1.3fr;
+  grid-template-rows: minmax(100px, 0.15fr) minmax(500px, 1.4fr) minmax(
+      500px,
+      1.4fr
+    );
+  grid-template-areas: "header-container header-container" "product-container chart-container" "product-container table-container";
+}
+
+/* Product Area */
+.product-container {
+  grid-area: product-container;
+  background-color: var(--container-background-color);
+  border-left: var(--vertical-border);
+  border-right: var(--vertical-border);
+  border-top: var(--horizontal-border);
+  border-bottom: var(--horizontal-border);
+}
+/* Header Area */
+.header-container {
+  grid-area: header-container;
+  background-color: var(--container-background-color);
   text-align: center;
+  color: black;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/* Chart Area */
+.chart-container {
+  grid-area: chart-container;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--container-background-color);
+  border-left: var(--vertical-border);
+  border-right: var(--vertical-border);
+  border-top: var(--horizontal-border);
+  border-bottom: var(--horizontal-border);
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* Table Area */
+.table-container {
+  grid-area: table-container;
+  background-color: var(--container-background-color);
+  border-left: var(--vertical-border);
+  border-right: var(--vertical-border);
+  border-top: var(--horizontal-border);
+  border-bottom: var(--horizontal-border);
 }
