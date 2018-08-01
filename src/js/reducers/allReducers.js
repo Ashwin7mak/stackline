@@ -1,7 +1,12 @@
 import { combineReducers } from "redux";
+import data from "../../data/Webdev_data.json";
 
-// import other combineReducers
+const dataReducer = (state = data, action) => {
+  return state;
+};
 
-const allReducers = combineReducers({});
+const allReducers = combineReducers({
+  data: dataReducer
+});
 
 export default allReducers;

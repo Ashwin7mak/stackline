@@ -1,6 +1,6 @@
 Create this list of tasks to complete - DONE
-Add HTML and CSS Grid layout to App.js
-Add JSON file to Redux store
+Add HTML and CSS Grid layout to App.js - DONE
+Add JSON file to Redux store - DONE
 Create Product component
   - Add image from JSON
   - Add title beneat image
