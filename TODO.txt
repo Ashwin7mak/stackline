@@ -1,0 +1,46 @@
+Create this list of tasks to complete - DONE
+Add HTML and CSS Grid layout to App.js
+Add JSON file to Redux store
+Create Product component
+  - Add image from JSON
+  - Add title beneat image
+  - Add subtitle beneat title
+  - Add <hr> element
+  - Add tags in between <span> elements
+  - Add <hr> element
+  - Add Overview/Home Icon
+  - Add Sales/Graph Icon
+Test Product component
+Create ProductContainer
+  - Render 1 Product component
+  - Pass in src, title, subtitle, tags to Product component
+  - Render ProductContainer in App.js
+Test ProductContainer
+Create Table component
+  - Add table headings: "Week Ending", "Retail Sales", "Wholesale Sales", "Units Sold", "Retailer Margin"
+  - Table rows should be passed in as props
+Test Table component
+Create TableContainer
+  - Render 1 Table component
+  - Create a variable "rows" by mapping over JSON sales data. Pass this to Table as a prop
+  - Render TableContainer in App.js
+Test TableContainer
+Create ChartContainer
+  - Use recharts for graph
+  - Render ChartContainer in App.js
+Create Header component
+  - Add Stackline logo
+Add sort functionality
+  - Create and test SORT action
+  - Add sort logic to reducer to update data held in state
+Test reducer
+
+Styling
+  - Match color scheme from mockup
+  - Add border radius to tags in Product component
+  - Add drop down arrows to Table headers
+  - Add Graph title 
+  - Add lines between rows in table
+
+Deploy to gh-pages
+
