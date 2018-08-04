@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import json from "../../data/Webdev_data.json";
-import { SORT } from "../../constants";
+// import json from "../../data/Webdev_data.json";
+import { SORT, FETCH } from "../../constants";
 
-const data = json[0];
+// const data = json[0];
 
 const direction = {
   weekEnding: "asc",
@@ -12,8 +12,11 @@ const direction = {
   retailerMargin: "asc"
 };
 
-const dataReducer = (state = data, action) => {
+const dataReducer = (state = {}, action) => {
   switch (action.type) {
+    case FETCH:
+      return action.data;
+
     case SORT:
       const key = action.key;
 
