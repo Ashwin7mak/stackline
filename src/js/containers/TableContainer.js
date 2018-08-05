@@ -12,7 +12,7 @@ class TableContainer extends Component {
   }
 
   componentDidMount() {
-    this.props.getData();
+    this.props.fetchData();
   }
 
   sortBy(key) {
@@ -55,7 +55,7 @@ function mapDispatchToProps(dispatch) {
     sortBy: function(key) {
       dispatch(sortBy(key));
     },
-    getData: function() {
+    fetchData: function() {
       dispatch(fetchData());
     }
   };

@@ -33,6 +33,8 @@ class ProductContainer extends Component {
       </div>
     ];
 
+    const alt = this.props.data.title ? this.props.data.title + " image" : "No image";
+
     return (
       <Product
         src={this.props.data.image}
@@ -40,6 +42,7 @@ class ProductContainer extends Component {
         subtitle={this.props.data.subtitle}
         tags={tags}
         icons={icons}
+        alt={alt}
       />
     );
   }
