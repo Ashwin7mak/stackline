@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
-// import json from "../../data/Webdev_data.json";
 import { SORT, FETCH } from "../../constants";
 
+// import json from "../../data/Webdev_data.json";
 // const data = json[0];
 
 const direction = {
@@ -18,33 +18,41 @@ const dataReducer = (state = {}, action) => {
       return action.data;
 
     case SORT:
-      const key = action.key;
 
-      // Creates copy of state's sales property to avoid mutating state.
-      const sales = state.sales.map(salesObj => {
-        return Object.assign({}, salesObj);
-      });
+      if (Object.getOwnPropertyNames(state).length > 0) {
 
-      // Sorts sales copy by date or number.
-      let sortedSales;
-      if (key === "weekEnding") {
-        sortedSales = sales.sort(
-          (a, b) =>
-            direction[key] === "asc"
-              ? new Date(b[key]).getTime() - new Date(a[key]).getTime()
-              : new Date(a[key]).getTime() - new Date(b[key]).getTime()
-        );
+        const key = action.key;
+  
+        // Creates copy of state's sales property to avoid mutating state.
+        const sales = state.sales.map(salesObj => {
+          return Object.assign({}, salesObj);
+        });
+  
+        // Sorts sales copy by date or number.
+        let sortedSales;
+        if (key === "weekEnding") {
+          sortedSales = sales.sort(
+            (a, b) =>
+              direction[key] === "asc"
+                ? new Date(b[key]).getTime() - new Date(a[key]).getTime()
+                : new Date(a[key]).getTime() - new Date(b[key]).getTime()
+          );
+        } else {
+          sortedSales = sales.sort(
+            (a, b) =>
+              direction[key] === "asc" ? b[key] - a[key] : a[key] - b[key]
+          );
+        }
+  
+        direction[key] = direction[key] === "asc" ? "desc" : "asc";
+        return Object.assign({}, state, { sales: sortedSales });
       } else {
-        sortedSales = sales.sort(
-          (a, b) =>
-            direction[key] === "asc" ? b[key] - a[key] : a[key] - b[key]
-        );
+        return state;
       }
+      
+      default:
+        return state;
 
-      direction[key] = direction[key] === "asc" ? "desc" : "asc";
-      return Object.assign({}, state, { sales: sortedSales });
-    default:
-      return state;
   }
 };
 

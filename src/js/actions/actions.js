@@ -15,6 +15,7 @@ export const fetchAction = data => {
   };
 };
 
+// Uploaded provided JSON (Webdev_data.json) to myjson.com for test purposes.
 export function fetchData() {
   return dispatch => {
     return axios.get("https://api.myjson.com/bins/126og8")
