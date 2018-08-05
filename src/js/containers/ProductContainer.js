@@ -33,7 +33,9 @@ class ProductContainer extends Component {
       </div>
     ];
 
-    const alt = this.props.data.title ? this.props.data.title + " image" : "No image";
+    const alt = this.props.data.title
+      ? this.props.data.title + " image"
+      : "No image";
 
     return (
       <Product

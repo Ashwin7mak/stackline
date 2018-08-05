@@ -2,6 +2,7 @@ import React from "react";
 import { configure, mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import configureStore from "redux-mock-store";
+import thunk from "redux-thunk";
 import { Provider } from "react-redux";
 import json from "../data/Webdev_data.json";
 import ProductContainer from "../js/containers/ProductContainer";
@@ -13,7 +14,7 @@ const data = json[0];
 
 configure({ adapter: new Adapter() });
 
-const middlewares = [];
+const middlewares = [thunk];
 const mockStore = configureStore(middlewares);
 let store;
 

@@ -15,15 +15,16 @@ export const fetchAction = data => {
   };
 };
 
-// Uploaded provided JSON (Webdev_data.json) to myjson.com for test purposes.
+// Uploaded provided JSON file (Webdev_data.json) to myjson.com to test API call.
 export function fetchData() {
   return dispatch => {
-    return axios.get("https://api.myjson.com/bins/126og8")
+    return axios
+      .get("https://api.myjson.com/bins/126og8")
       .then(res => {
         // console.log("JSON array logged for test purposes:", JSON.parse(res.request.response));
-        const json = JSON.parse(res.request.response)[0];
-        return dispatch(fetchAction(json));
-    })
+        const data = JSON.parse(res.request.response)[0];
+        return dispatch(fetchAction(data));
+      })
       .catch(err => {
         console.log(err);
         return dispatch(fetchAction({}));
